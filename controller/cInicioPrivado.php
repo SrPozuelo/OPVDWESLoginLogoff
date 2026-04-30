@@ -15,7 +15,7 @@
     }
     //Se comprueba si el botón "Cerrar sesion" ha sido pulsado.
     if(isset($_REQUEST['cerrarSesion'])) {
-         //Código que se ejecuta si el botón "Cerrar sesion" fue pulsado.
+        //Código que se ejecuta si el botón "Cerrar sesion" fue pulsado.
         $_SESSION['PaginaAnterior']=$_SESSION['paginaEnCurso'];
         $_SESSION['PaginaEnCurso']='inicioPublico';
         header('Location: indexLoginLogoff.php');

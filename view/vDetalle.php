@@ -32,11 +32,7 @@
                     foreach($avDetalle['Session'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_SESSION['.$sVariable.']</td>');
-                            if(gettype($sResultado)=="string"){
-                                echo('<td>'.$sResultado.'</td>');
-                            }
-                            if(gettype($sResultado)=="object"){
-                            }
+                            echo('<td><pre id="detallePre">'.print_r($sResultado,true).'</pre></td>');
                         echo("</tr>");
                     }
                 }
@@ -228,5 +224,5 @@
             ?>
         </tbody>
     </table>
-    <div><?php echo $avDetalle['phpInfo']?></div>
+    <div><?php echo phpinfo()?></div>
 </main>

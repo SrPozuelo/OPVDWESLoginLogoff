@@ -13,7 +13,10 @@
         'cambiarPassword' => 'controller/cCambiarPassword.php',
         'borrarCuenta'    => 'controller/cBorrarCuenta.php',
         'error'           => 'controller/cError.php',
-        'wip'             => 'controller/cWIP.php'
+        'wip'             => 'controller/cWIP.php',
+        'plantilla'       => 'controller/cPlantilla.php',
+        'departamento'    => 'controller/cDepartamentos.php',
+        'rest'            => 'controller/cRest.php'
     ];
     $View = [
         'inicioPublico'   => 'view/vInicioPublico.php',
@@ -26,6 +29,9 @@
         'cambiarPassword' => 'view/vCambiarPassword.php',
         'borrarCuenta'    => 'view/vBorrarCuenta.php',
         'error'           => 'view/vError.php',
-        'wip'             => 'view/vWIP.php'
+        'wip'             => 'view/vWIP.php',
+        'plantilla'       => 'view/vPlantilla.php',
+        'departamento'    => 'view/vDepartamentos.php',
+        'rest'            => 'view/vRest.php'
     ];  
 ?>

@@ -14,4 +14,4 @@ Cotrol de acceso a la aplicación y CRUB de una tabla de la base de datos.
 
 
 ## Accesos a la aplicación
-[URL de la App Login Logoff](https://oscarpozvil.ieslossauces.es/OPVDWESLoginLogoff/indexLoginLogoff.php)
+[URL de la App Login Logoff](https://OPVDWESLoginLogoff.oscarpozvil.ieslossauces.es)

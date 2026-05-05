@@ -17,7 +17,12 @@
 <main id="contenedor">  
     <h2 id="titulo">INICIO PRIVADO</h2>
     <form action="" method="post" id="Detalles">
+        <button name="Plantilla" id="Boton"><span>PLANTILLA</span></button>
         <button name="Detalles" id="Boton"><span>DETALLES</span></button>
+        <button name="Error" id="Boton"><span>ERROR</span></button>
+        <button name="Departamentos" id="Boton"><span>DEPARTAMENTOS</span></button>
+        <button name="Rest" id="Boton"><span>REST</span></button>
+        <button name="WIP" id="Boton"><span>WIP</span></button>
     </form>
     <?php
         switch($avInicioPrivado['idioma']){

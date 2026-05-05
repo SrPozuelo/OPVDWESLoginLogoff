@@ -13,9 +13,48 @@
         header('Location: indexLoginLogoff.php');
         exit;
     }
+    //Se comprueba si el botón "Plantilla" ha sido pulsado.
+    if(isset($_REQUEST['Plantilla'])){
+        //Código que se ejecuta si el botón "Plantilla" fue pulsado.
+        $_SESSION['PaginaAnterior']=$_SESSION['PaginaEnCurso'];
+        $_SESSION['PaginaEnCurso']='plantilla';
+        header('Location: indexLoginLogoff.php');
+        exit;
+    }
+    //Se comprueba si el botón "Error" ha sido pulsado.
+    if(isset($_REQUEST['Error'])){
+        //Código que se ejecuta si el botón "Plantilla" fue pulsado.
+        $_SESSION['PaginaAnterior']=$_SESSION['PaginaEnCurso'];
+        $_SESSION['PaginaEnCurso']='error';
+        header('Location: indexLoginLogoff.php');
+        exit;
+    }
+    //Se comprueba si el botón "Departamentos" ha sido pulsado.
+    if(isset($_REQUEST['Departamentos'])){
+        //Código que se ejecuta si el botón "Plantilla" fue pulsado.
+        $_SESSION['PaginaAnterior']=$_SESSION['PaginaEnCurso'];
+        $_SESSION['PaginaEnCurso']='departamento';
+        header('Location: indexLoginLogoff.php');
+        exit;
+    }
+    //Se comprueba si el botón "Rest" ha sido pulsado.
+    if(isset($_REQUEST['Rest'])){
+        //Código que se ejecuta si el botón "Plantilla" fue pulsado.
+        $_SESSION['PaginaAnterior']=$_SESSION['PaginaEnCurso'];
+        $_SESSION['PaginaEnCurso']='rest';
+        header('Location: indexLoginLogoff.php');
+        exit;
+    }
+    if(isset($_REQUEST['WIP'])){
+        //Cóigo que se ejecuta si el botón "WIP" fue pulsado.
+        $_SESSION['PaginaAnterior']=$_SESSION['PaginaEnCurso'];
+        $_SESSION['PaginaEnCurso']='wip';
+        header('Location: indexLoginLogoff.php');
+        exit;
+    }
     //Se comprueba si el botón "Cerrar sesion" ha sido pulsado.
     if(isset($_REQUEST['cerrarSesion'])) {
-         //Código que se ejecuta si el botón "Cerrar sesion" fue pulsado.
+        //Código que se ejecuta si el botón "Cerrar sesion" fue pulsado.
         $_SESSION['PaginaAnterior']=$_SESSION['paginaEnCurso'];
         $_SESSION['PaginaEnCurso']='inicioPublico';
         header('Location: indexLoginLogoff.php');

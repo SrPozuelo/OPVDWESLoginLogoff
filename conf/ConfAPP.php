@@ -7,25 +7,31 @@
         'inicioPublico'   => 'controller/cInicioPublico.php',
         'login'           => 'controller/cLogin.php',
         'inicioPrivado'   => 'controller/cInicioPrivado.php',
-        'detalles'        => 'controller/cDetalles.php',
+        'detalles'        => 'controller/cDetalle.php',
         'registro'        => 'controller/cRegistro.php',
         'cuenta'          => 'controller/cCuenta.php',
         'cambiarPassword' => 'controller/cCambiarPassword.php',
         'borrarCuenta'    => 'controller/cBorrarCuenta.php',
         'error'           => 'controller/cError.php',
-        'wip'             => 'controller/cWIP.php'
+        'wip'             => 'controller/cWIP.php',
+        'plantilla'       => 'controller/cPlantilla.php',
+        'departamento'    => 'controller/cDepartamentos.php',
+        'rest'            => 'controller/cRest.php'
     ];
     $View = [
         'inicioPublico'   => 'view/vInicioPublico.php',
         'layout'          => 'view/layout.php',
         'login'           => 'view/vLogin.php',
         'inicioPrivado'   => 'view/vInicioPrivado.php',
-        'detalles'        => 'view/vDetalles.php',
+        'detalles'        => 'view/vDetalle.php',
         'registro'        => 'view/vRegistro.php',
         'cuenta'          => 'view/vCuenta.php',
         'cambiarPassword' => 'view/vCambiarPassword.php',
         'borrarCuenta'    => 'view/vBorrarCuenta.php',
         'error'           => 'view/vError.php',
-        'wip'             => 'view/vWIP.php'
+        'wip'             => 'view/vWIP.php',
+        'plantilla'       => 'view/vPlantilla.php',
+        'departamento'    => 'view/vDepartamentos.php',
+        'rest'            => 'view/vRest.php'
     ];  
 ?>

@@ -28,21 +28,11 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_SESSION)){
-                    foreach($_SESSION AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Session'])){
+                    foreach($avDetalle['Session'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_SESSION['.$sVariable.']</td>');
-                            echo('<td>');
-                                foreach($sResultado AS $sVar => $sResul){
-                                    if($sVar=='FechaHoraUltimaConexionAnterior' OR $sVar=='FechaHoraUltimaConexion'){
-                                        $oFecha=new DateTime($sResul);
-                                        echo($sVar.' => '.$oFecha->format("d-m-Y H:i:s").'<br>');
-                                    }
-                                    else{
-                                        echo($sVar.' => '.$sResul.'<br>');
-                                    }
-                                }
-                            echo('</td>');
+                            echo('<td><pre id="detallePre">'.print_r($sResultado,true).'</pre></td>');
                         echo("</tr>");
                     }
                 }
@@ -64,8 +54,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_COOKIE)){
-                    foreach($_COOKIE AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Cookie'])){
+                    foreach($avDetalle['Cookie'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_COOKIE['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -90,8 +80,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_SERVER)){
-                    foreach($_SERVER AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Server'])){
+                    foreach($avDetalle['Server'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_SERVER['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -116,8 +106,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_REQUEST)){
-                    foreach($_REQUEST AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Request'])){
+                    foreach($avDetalle['Request'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_REQUEST['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -142,8 +132,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_GET)){
-                    foreach($_GET AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Get'])){
+                    foreach($avDetalle['Get'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_GET['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -168,8 +158,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_POST)){
-                    foreach($_POST AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Post'])){
+                    foreach($avDetalle['Post'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_POST['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -194,8 +184,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_FILES)){
-                    foreach($_FILES AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Files'])){
+                    foreach($avDetalle['Files'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_FILES['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -220,8 +210,8 @@
         </thead>
         <tbody>
             <?php
-                if(!empty($_ENV)){
-                    foreach($_ENV AS $sVariable => $sResultado){
+                if(!empty($avDetalle['Env'])){
+                    foreach($avDetalle['Env'] AS $sVariable => $sResultado){
                         echo("<tr>");
                             echo('<td>$_ENV['.$sVariable.']</td>');
                             echo('<td>'.$sResultado.'</td>');
@@ -234,4 +224,5 @@
             ?>
         </tbody>
     </table>
+    <div><?php echo phpinfo()?></div>
 </main>
